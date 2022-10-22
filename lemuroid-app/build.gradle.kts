@@ -169,6 +169,19 @@ dependencies {
     implementation(deps.libs.kotlin.serialization)
     implementation(deps.libs.kotlin.serializationJson)
 
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    // Retrofit + GSON
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    // Room
+    implementation("androidx.room:room-runtime:2.3.0-beta03")
+    kapt("androidx.room:room-compiler:2.3.0-beta03")
+    implementation("androidx.room:room-ktx:2.3.0-beta03")
+
+
+
     implementation(deps.libs.libretrodroid)
 
     // Uncomment this when using a local aar file.
