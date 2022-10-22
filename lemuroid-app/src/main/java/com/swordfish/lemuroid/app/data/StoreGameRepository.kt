@@ -1,6 +1,7 @@
 package com.swordfish.lemuroid.app.data
 
 import com.swordfish.lemuroid.app.api.StoreGameApi
+import com.swordfish.lemuroid.app.utils.networkBoundResource
 import javax.inject.Inject
 
 class StoreGameRepository @Inject constructor(
@@ -15,11 +16,11 @@ class StoreGameRepository @Inject constructor(
         fetch ={
             api.getStoreGames()
         },
-//        saveFetchResult = { restaurants ->
+        saveFetchResult = { storeGames ->
 //            db.withTransaction {
 //                restaurantDao.deleteAllRestaurants()
 //                restaurantDao.insertRestaurants(restaurants)
 //            }
-//        }
+        }
     )
 }
