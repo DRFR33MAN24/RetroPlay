@@ -1,14 +1,14 @@
 package com.swordfish.lemuroid.app.api
 
-import com.codinginflow.simplecachingexample.data.Restaurant
+import com.swordfish.lemuroid.app.data.StoreGame
 import retrofit2.http.GET
 
-interface RestaurantApi {
+interface StoreGameApi {
 
     companion object {
         const val BASE_URL = "https://random-data-api.com/api/"
     }
 
     @GET("restaurant/random_restaurant?size=20")
-    suspend fun getRestaurants(): List<Restaurant>
+    suspend fun getStoreGames(): List<StoreGame>
 }
