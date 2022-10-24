@@ -14,6 +14,6 @@ class EpoxyStoreController():AsyncEpoxyController() {
         requestModelBuild()
     }
     override fun buildModels() {
-
+    epoxyStoreHeader {  }
     }
 }

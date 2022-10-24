@@ -9,23 +9,23 @@ import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.swordfish.lemuroid.R
 
 
-@EpoxyModelClass(layout=R.layout.layout_store_header_section)
-abstract class  EpoxyStoreHeaderSection: EpoxyModelWithHolder<EpoxyStoreHeaderSection.Holder>(){
+@EpoxyModelClass(layout=R.layout.layout_store_header)
+abstract class  EpoxyStoreHeader: EpoxyModelWithHolder<EpoxyStoreHeader.Holder>(){
 
     @EpoxyAttribute
     var title: Int? = null
 
     override fun bind(holder: Holder) {
-        title?.let {
-            holder.titleView.setText(it)
-        }
+//        title?.let {
+//            holder.titleView.setText(it)
+//        }
     }
 
     class Holder : EpoxyHolder() {
         lateinit var titleView: TextView
 
         override fun bindView(itemView: View) {
-            titleView = itemView.findViewById(R.id.text)
+           // titleView = itemView.findViewById(R.id.text)
         }
     }
 }
