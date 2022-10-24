@@ -13,6 +13,7 @@ android {
         applicationId = "com.swordfish.lemuroid"
     }
 
+
     if (usePlayDynamicFeatures()) {
         println("Building Google Play version. Bundling dynamic features.")
         dynamicFeatures.addAll(
@@ -180,6 +181,7 @@ dependencies {
     kapt("androidx.room:room-compiler:2.3.0-beta03")
     implementation("androidx.room:room-ktx:2.3.0-beta03")
 
+//    implementation("com.airbnb.android:epoxy-databinding:4.6.3-vinay-compose")
 
 
     implementation(deps.libs.libretrodroid)

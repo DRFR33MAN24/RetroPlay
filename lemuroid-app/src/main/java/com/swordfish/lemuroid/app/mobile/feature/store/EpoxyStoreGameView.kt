@@ -1,5 +1,5 @@
 
-package com.swordfish.lemuroid.app.mobile.feature.home
+package com.swordfish.lemuroid.app.mobile.feature.store
 
 import android.view.View
 import android.widget.ImageView
