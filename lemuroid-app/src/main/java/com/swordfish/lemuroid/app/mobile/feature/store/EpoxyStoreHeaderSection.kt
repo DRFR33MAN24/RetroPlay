@@ -9,7 +9,7 @@ import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.swordfish.lemuroid.R
 
 
-@EpoxyModelClass(layout = R.layout.layout_store_header_section)
+@EpoxyModelClass(layout=R.layout.layout_store_header_section)
 abstract class  EpoxyStoreHeaderSection: EpoxyModelWithHolder<EpoxyStoreHeaderSection.Holder>(){
 
     @EpoxyAttribute
